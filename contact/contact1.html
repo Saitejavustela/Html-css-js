@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Contact Form 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href=".\css\style1.css">
+	<link rel="stylesheet" href="..\main\style.css">
+
+	</head>
+	<body>
+		<!--header section starts-->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="icon.png" alt="">
+
+    </a>
+    <nav class="navbar">
+        <a href="..\main\index.html">Home</a>
+        <a href="..\about\about.html">About</a>
+        <a href="..\menu\menu.html">Menu</a>
+        <a href="..\products\products.html">Products</a>
+        <a href="#">Contact</a>
+        <a href="..\blogs\blogs.html">Blogs</a>
+    </nav>
+    <div class="icons">
+        <a href="..\login\login1.html" class="fas fa-user"></a>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here.....">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+                <img src="" alt="">
+                <div class="content">
+                    <h3>Bru instant coffee powder</h3>
+                    <div class="price">₹223.50</div>
+                </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+                <img src="" alt="">
+                <div class="content">
+                    <h3>choco chip</h3>
+                    <div class="price">₹599.00</div>
+                </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+                <img src="" alt="">
+                <div class="content">
+                    <h3>Cappuccino</h3>
+                    <div class="price">₹283.50</div>
+                </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+                <img src="" alt="">
+                <div class="content">
+                    <h3>coffee truffles(100g)</h3>
+                    <div class="price">₹99.00</div>
+                </div>
+        </div>
+        <button class=btn>
+            <span class="default">checkout now</span>
+        </button>
+        </button>
+    </div>
+    
+</header>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Contact <span>Form</span></h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row justify-content-center">
+							<div class="col-lg-8 mb-5">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="dbox w-100 text-center">
+					        		<div class="icon d-flex align-items-center justify-content-center">
+					        			<span class="fa fa-map-marker"></span>
+					        		</div>
+					        		<div class="text">
+						            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+						          </div>
+					          </div>
+									</div>
+									<div class="col-md-4">
+										<div class="dbox w-100 text-center">
+					        		<div class="icon d-flex align-items-center justify-content-center">
+					        			<span class="fa fa-phone"></span>
+					        		</div>
+					        		<div class="text">
+						            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+						          </div>
+					          </div>
+									</div>
+									<div class="col-md-4">
+										<div class="dbox w-100 text-center">
+					        		<div class="icon d-flex align-items-center justify-content-center">
+					        			<span class="fa fa-paper-plane"></span>
+					        		</div>
+					        		<div class="text">
+						            <p><span>Email:</span> <a href="mailto:info@coffee.com">info@coffee.com</a></p>
+						          </div>
+					          </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-8">
+								<div class="contact-wrap">
+									<h3 class="mb-4 text-center">Get in touch with us</h3>
+									<div id="form-message-warning" class="mb-4 w-100 text-center"></div> 
+				      		<div id="form-message-success" class="mb-4 w-100 text-center">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="jquery.min.js"></script>
+  <script src="popper.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="jquery.validate.min.js"></script>
+  <script src="main.js"></script>
+  <script src="..\main\script.js"></script>
+	</body>
+</html>
+

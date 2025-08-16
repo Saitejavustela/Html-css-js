@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="login1.css">
+</head>
+<body>
+  
+  <div class="wrapper">
+    <div id="errorMsg"></div>
+    <form class="login" name="loginForm" onsubmit="return validateLoginForm()" method="POST">
+      <h2>Login</h2>
+        <div class="input-field">
+        <input type="text" name="name" id="logName" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" name="password" id="logPassword" required>
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="signup2.html">Register</a></p>
+      </div>
+	<div class="register">
+               Or login with
+            </div>
+            <div class="links">
+               <div class="facebook">
+                  <a href="https://www.facebook.com/login/"><ion-icon name="logo-facebook"></ion-icon></a>
+               </div>
+               <div class="instagram">
+                  <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&client_id=388036620207-3uolk1hv6ta7p3r9l6s3bobifh086qe1.apps.googleusercontent.com&scope=openid%20email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&redirect_uri=https%3A%2F%2Fauth.geeksforgeeks.org%2FgoogleLogin.php&state=bc78e81c0fee5c839af5df225315025f&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow"><ion-icon name="logo-google"></ion-icon></a>
+               </div>
+               <div class="linkedin">
+                <a href="https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558718_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9182614&mcid=6844056167778418689&cid=&gclid=CjwKCAiAvJarBhA1EiwAGgZl0P37CIKr2_ELOGrjKA_4bub8Dc283OePqCDQx6VbKo6K8g4JskwCKBoC5bQQAvD_BwE&gclsrc=aw.ds"><ion-icon name="logo-linkedin"></ion-icon></a>
+             </div>
+            </div>
+    </form>
+  </div>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="login2.js"></script>
+</body>
+</html>
